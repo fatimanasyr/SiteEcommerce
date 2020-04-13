@@ -1,4 +1,4 @@
-package Ecommerce;
+package model;
 
 import java.sql.Date;
 
