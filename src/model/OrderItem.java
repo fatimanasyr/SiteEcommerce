@@ -1,4 +1,4 @@
-package Ecommerce;
+package model;
 
 public class OrderItem {
 	

@@ -1,6 +1,6 @@
-package Ecommerce;
+package model;
 
-public class Adress {
+public class Address {
 	private int id;
 	private String city;
 	private String street;
