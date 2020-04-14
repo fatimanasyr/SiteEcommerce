@@ -13,7 +13,7 @@ public class Customer {
 	private List<Order> listOrder;
 
 
-	public Customer(int id, String firstName, String lastName, String email, int phoneNumber, String password, List<Order> listOrder) {
+	public Customer(int id, String firstName, String lastName, String email, int phoneNumber, String password ) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -77,5 +77,10 @@ public class Customer {
 
 	public void setListOrder(List<Order> listOrder) {
 		this.listOrder = listOrder;
+	}
+
+	public void  appendListOrder(Order order){
+		listOrder.add(order);
+
 	}
 }
