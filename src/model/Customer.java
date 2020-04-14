@@ -1,5 +1,7 @@
 package model;
 
+import java.util.List;
+
 public class Customer {
 
 	private int id;
@@ -8,16 +10,17 @@ public class Customer {
 	private String email;
 	private int phoneNumber;
 	private String password;
-	private Order order;
+	private List<Order> listOrder;
 
 
-	public Customer(int id, String firstName, String lastName, String email, int phoneNumber, String password, Order order) {
+	public Customer(int id, String firstName, String lastName, String email, int phoneNumber, String password, List<Order> listOrder) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.phoneNumber = phoneNumber;
 		this.password = password;
+		this.listOrder = listOrder;
 	}
 
 	public int getId() {
@@ -68,11 +71,11 @@ public class Customer {
 		this.password = password;
 	}
 
-	public Order getOrder() {
-		return order;
+	public List<Order> getListOrder() {
+		return listOrder;
 	}
 
-	public void setOrder(Order order) {
-		this.order = order;
+	public void setListOrder(List<Order> listOrder) {
+		this.listOrder = listOrder;
 	}
 }

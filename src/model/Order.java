@@ -1,17 +1,19 @@
 package model;
 
 import java.sql.Date;
+import java.util.List;
 
 public class Order {
 	
 	private int id;
 	private Date DateOrder;
 	private OrderItem orderItem;
+	private List<OrderItem> listOrderItem;
 
-	public Order(int id, Date dateOrder, OrderItem orderItem) {
+	public Order(int id, List<OrderItem> listOrderItem, Date dateOrder) {
 		this.id = id;
 		DateOrder = dateOrder;
-		this.orderItem = orderItem;
+		this.listOrderItem = listOrderItem;
 	}
 
 	public int getId() {
@@ -30,11 +32,11 @@ public class Order {
 		DateOrder = dateOrder;
 	}
 
-	public OrderItem getOrderItem() {
-		return orderItem;
+	public List<OrderItem> getListOrderItem() {
+		return listOrderItem;
 	}
 
-	public void setOrderItem(OrderItem orderItem) {
-		this.orderItem = orderItem;
+	public void setListOrderItem(List<OrderItem> listOrderItem) {
+		this.listOrderItem = listOrderItem;
 	}
 }
