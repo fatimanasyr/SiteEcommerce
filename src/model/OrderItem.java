@@ -5,8 +5,17 @@ public class OrderItem {
 	private int id;
 	private int quantity;
 	private Product product;
+	private Order order;
 
-	public int getId() {
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
+
+    public int getId() {
 		return id;
 	}
 

@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
@@ -8,17 +9,39 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 	private String email;
-	private int phoneNumber;
 	private String password;
-	private List<Order> listOrder;
+	private String phoneNumber;
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	private List<Review> listReview = new ArrayList<>();
+
+	public void addReview(Review review){
+	    listReview.add(review);
+    }
+
+    public List<Review> getListReview() {
+        return listReview;
+    }
+
+    public void setListReview(List<Review> listReview) {
+        this.listReview = listReview;
+    }
+
+    private List<Order> listOrder;
 
 
-	public Customer(int id, String firstName, String lastName, String email, int phoneNumber, String password ) {
+	public Customer(int id, String firstName, String lastName, String email, String phoneNumber, String password ) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
-		this.phoneNumber = phoneNumber;
 		this.password = password;
 	}
 
@@ -54,13 +77,7 @@ public class Customer {
 		this.email = email;
 	}
 
-	public int getPhoneNumber() {
-		return phoneNumber;
-	}
 
-	public void setPhoneNumber(int phoneNumber) {
-		this.phoneNumber = phoneNumber;
-	}
 
 	public String getPassword() {
 		return password;

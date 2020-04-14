@@ -7,6 +7,21 @@ public class Review {
 	private String comment;
 	private int star;
 	private Product product;
+	private Customer customer;
+
+	public Review(int id, String comment, int star) {
+		this.id = id;
+		this.comment = comment;
+		this.star = star;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
 
 	public int getId() {
 		return id;
