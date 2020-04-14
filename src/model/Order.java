@@ -6,14 +6,14 @@ import java.util.List;
 public class Order {
 	
 	private int id;
-	private Date DateOrder;
+	private Date dateOrder;
 	private OrderItem orderItem;
 	private List<OrderItem> listOrderItem;
 
-	public Order(int id, List<OrderItem> listOrderItem, Date dateOrder) {
+	public Order(int id ,  Date dateOrder) {
 		this.id = id;
-		DateOrder = dateOrder;
-		this.listOrderItem = listOrderItem;
+		this.dateOrder = dateOrder;
+
 	}
 
 	public int getId() {
@@ -25,11 +25,11 @@ public class Order {
 	}
 
 	public Date getDateOrder() {
-		return DateOrder;
+		return dateOrder;
 	}
 
 	public void setDateOrder(Date dateOrder) {
-		DateOrder = dateOrder;
+		this.dateOrder = dateOrder;
 	}
 
 	public List<OrderItem> getListOrderItem() {
