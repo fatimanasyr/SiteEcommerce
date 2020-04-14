@@ -20,7 +20,6 @@ public class Customer {
 		this.email = email;
 		this.phoneNumber = phoneNumber;
 		this.password = password;
-		this.listOrder = listOrder;
 	}
 
 	public int getId() {
