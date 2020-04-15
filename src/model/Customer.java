@@ -11,6 +11,7 @@ public class Customer {
 	private String email;
 	private String password;
 	private String phoneNumber;
+	private List<Review> listReview = new ArrayList<>();
 
 	public String getPhoneNumber() {
 		return phoneNumber;
@@ -20,7 +21,6 @@ public class Customer {
 		this.phoneNumber = phoneNumber;
 	}
 
-	private List<Review> listReview = new ArrayList<>();
 
 	public void addReview(Review review){
 	    listReview.add(review);
@@ -43,6 +43,7 @@ public class Customer {
 		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
+		this.phoneNumber = phoneNumber;
 	}
 
 	public int getId() {
