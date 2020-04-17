@@ -6,6 +6,13 @@ public class Admin {
 	private  String password;
 	private String role;
 
+	public Admin(int id, String email, String password, String role) {
+		this.id = id;
+		this.email = email;
+		this.password = password;
+		this.role = role;
+	}
+
 	public int getId() {
 		return id;
 	}
